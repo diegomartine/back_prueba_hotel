@@ -18,9 +18,9 @@ class HotelController extends Controller
             'name' => 'required|string',
             'address' => 'required|string',
             'city' => 'required|string',
-            'nit' => 'required|string',  // Eliminar 'unique' de aquí
-            'phone_number' => 'nullable|string',  // Si el teléfono es opcional
-            'max_rooms' => 'required|integer|min:1'  // Asegúrate de que max_rooms sea válido
+            'nit' => 'required|string', 
+            'phone_number' => 'nullable|string',  
+            'max_rooms' => 'required|integer|min:1'  
         ]);
     
         // Verificar si el hotel ya existe por NIT
