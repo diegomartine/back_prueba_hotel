@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Ruta de depuración
 Route::get('/debug', function () {
     return response()->json([
         'APP_URL' => env('APP_URL'),
